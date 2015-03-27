@@ -4,54 +4,113 @@
 	margin: 0px;
 	padding: 0px;
 }
+th {
+	border-bottom: 1px solid #202020;
+}
 
-p {
-	font-family: 'Abel';
-	font-size: 30px;
+body {
+	background-color: #b81d18;
 }
 
 #okvir {
-	background-color: grey;
 	margin: 0em 3% 1.5% 3%;
 	min-width: 30em;
+	background-color: #b6b6b6;
+	overflow: auto;
 }
 #zaglavlje {
-	background-color: green;
+	background-color: #202020;
 	height: 4em;
 }
 #logo {
-	background-color: blue;
 	float: left;
-	margin: 0.8em;
+	margin: 0.7em;
 	margin-left: 1em;
 }
+#logo a{
+	color: #b6b6b6;
+	font-family: 'Abel';
+	font-size: 2em;
+	text-decoration: none;
+}
+#logo img{
+	width: 2em;
+	height: 2em;
+}
 #meni {
-	background-color: white;
 	float: left;
-	margin: 0.8em;
+	margin: 1em;
+	position: relative;
+	top: 0.2em;
+}
+#meni ul li{
+	display: inline;
+}
+#meni ul a{
+	text-decoration: none;
+	background-color: #202020;
+	color: #b6b6b6;
+	font-family: 'Abel';
+	font-size: 1.5em;
+	padding:0 0.5em 0 0.5em;
+}
+#meni ul a:hover {
+    background-color: #b81d18;
 }
 #uvod {
-	background-color: yellow;
+	background-color: #b6b6b6;
 	height: 10em;
 }
 #uvod_opis {
-	background-color: red;
 	float: left;
 	margin: 1em;
+}
+#uvod_opis ul {
+	color: #202020;
+	font-family: 'Hind', sans-serif;
+	font-size: 1.2em;
+	list-style-image: url('images/list.jpg');
+	margin-left: 3em;
+}
+#uvod_opis ul li{
+	padding-top: 0.8em;
 }
 #uvod_slika {
-	background-color: purple;
 	float: left;
-	padding-left: 15%;
+	padding-left: 5%;
 	margin: 1em;
 }
-#pretraga {
-	background-color: maroon;
-	float: left;
-	width: 15em;
+#uvod_slika img{
+	width: 20em;
+	height: 7em;
 }
+#sadrzaj {
+	background-color: white;
+	overflow: auto;
+}
+#pretraga {
+	background-color: white;
+	float: left;
+	width: 14em;
+	padding: 1em;
+	border-right: 1px solid #b6b6b6;
+}
+#forma_pretraga {
+	font-family: 'Hind', sans-serif;
+}
+#forma_pretraga input{
+	width: 5em;
+	margin: 0.3em;
+}
+
+#forma_pretraga select{
+	width: 16em;
+	margin: 0.3em;
+	margin-left: 0;
+}
+
 #kursevi_naslovna {
-	background-color: pink;
+	background-color: white;
 	overflow: hidden;
 	min-width: 30em;
 }
@@ -61,7 +120,50 @@ p {
 	margin: 1em 0em 0em 1em;
 	float: left;
 }
+
+#novosti {
+	clear: both;
+	background-color: white;
+	padding: 1em;
+	font-family: 'Hind', sans-serif;
+	overflow: auto;
+}
+
+.novost img{
+	width: 10em;
+	height: 10em;
+	padding-right: 1em;
+	border-bottom: 10em;
+	float: left;
+}
+
 #kraj {
-	background-color: cyan;
+	background-color: #7E8F7C;
 	padding: 0.5em;
+}
+.naslov {
+	font-family: 'Hind', sans-serif;
+	color: #202020;
+	padding-top: 0.5em;
+	clear: both;
+}
+.autor {
+	font-family: 'Hind', sans-serif;
+	color: #004687;
+	float: left;
+	padding: 0 0.5em 0.5em 0;
+}
+.datum {
+	font-family: 'Hind', sans-serif;
+	color: #004687;
+	float: left;
+	font-style: italic;
+	padding: 0 0.5em 0.5em 0;
+}
+.detaljnije {
+	float: right;
+	font-family: 'Hind', sans-serif;
+	color: #b81d18;
+	text-decoration: none;
+	padding-right: 4em;
 }

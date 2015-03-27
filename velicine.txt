@@ -1,0 +1,4 @@
+default font 16px
+logo 2em = 32px
+slika uz logo = 32px
+zaglavlje 3em = 48px

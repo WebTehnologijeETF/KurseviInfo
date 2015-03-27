@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KurseviInfo - Kursevi</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<a name="this"></a>
+	<div id="okvir">
+		<div id="zaglavlje">
+			<div id="logo">
+				<a href="#this">KurseviInfo</a>
+				<img src="images/logo.png" alt=""/>
+			</div>
+			<div id="meni">
+				<ul>
+					<a href="index.html"><li>Početna</li></a>
+					<a href="kursevi.html"><li>Kursevi</li></a>
+					<a href=""><li>Dodaj kurs</li></a>
+					<a href=""><li>Kontakt</li></a>
+				</ul>
+			</div>
+		</div>
+		<div id="sadrzaj">
+			<div id="pretraga">
+				<form id="forma_pretraga">
+					<table>
+						<th>Pretraga</th>
+						<tr><td>Kategorija:</td></tr>
+						<tr><td>
+							<select>
+							  <option value="jezici">Jezici</option>
+							  <option value="informatika">Informatika</option>
+							  <option value="ekonomija">Ekonomija</option>
+							  <option value="matematika">Matematika</option>
+							</select></td></tr>
+						<tr><td>Grad:</td></tr>
+						<tr><td>
+							<select>
+							  <option value="sarajevo">Sarajevo</option>
+							  <option value="bihac">Bihać</option>
+							  <option value="mostar">Mostar</option>
+							  <option value="jajce">Jajce</option>
+							</select></td></tr>
+						<tr><td>Cijena:</td></tr>
+						<tr><td>Od:<input type="text" name="najmanjaCijena"> Do:<input type="text" name="najvecaCijena"></td></tr>
+						<tr><td align="right"><input type="submit" value="Traži"></td></tr>
+					</table>
+				</form>
+			</div>
+			<div id="kursevi_naslovna">
+				<div class="kurs_naslovna">
+					<p> kurs</p>
+				</div>
+				<div class="kurs_naslovna">
+					<p> kurs </p>
+				</div>
+				<div class="kurs_naslovna">
+					<p> kurs</p>
+				</div>
+				<div class="kurs_naslovna">
+					<p> kurs </p>
+				</div>
+
+			</div>
+		</div>
+		<div id="kraj">
+			<p>Kraj</p>
+		</div>
+	</div>
+</body>
+</html>
