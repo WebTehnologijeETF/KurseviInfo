@@ -1,0 +1,67 @@
+@import url('http://fonts.googleapis.com/css?family=Abel');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	font-family: 'Abel';
+	font-size: 30px;
+}
+
+#okvir {
+	background-color: grey;
+	margin: 0em 3% 1.5% 3%;
+	min-width: 30em;
+}
+#zaglavlje {
+	background-color: green;
+	height: 4em;
+}
+#logo {
+	background-color: blue;
+	float: left;
+	margin: 0.8em;
+	margin-left: 1em;
+}
+#meni {
+	background-color: white;
+	float: left;
+	margin: 0.8em;
+}
+#uvod {
+	background-color: yellow;
+	height: 10em;
+}
+#uvod_opis {
+	background-color: red;
+	float: left;
+	margin: 1em;
+}
+#uvod_slika {
+	background-color: purple;
+	float: left;
+	padding-left: 15%;
+	margin: 1em;
+}
+#pretraga {
+	background-color: maroon;
+	float: left;
+	width: 15em;
+}
+#kursevi_naslovna {
+	background-color: pink;
+	overflow: hidden;
+	min-width: 30em;
+}
+.kurs_naslovna {
+	background-color: white;
+	min-width: 25em;
+	margin: 1em 0em 0em 1em;
+	float: left;
+}
+#kraj {
+	background-color: cyan;
+	padding: 0.5em;
+}
