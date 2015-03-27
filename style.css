@@ -14,7 +14,7 @@ body {
 
 #okvir {
 	margin: 0em 3% 1.5% 3%;
-	min-width: 30em;
+	min-width: 25em;
 	background-color: #b6b6b6;
 	overflow: auto;
 }
@@ -85,6 +85,7 @@ body {
 	height: 7em;
 }
 #sadrzaj {
+	clear: both;
 	background-color: white;
 	overflow: auto;
 }
@@ -93,7 +94,6 @@ body {
 	float: left;
 	width: 14em;
 	padding: 1em;
-	border-right: 1px solid #b6b6b6;
 }
 #forma_pretraga {
 	font-family: 'Hind', sans-serif;
@@ -112,15 +112,8 @@ body {
 #kursevi_naslovna {
 	background-color: white;
 	overflow: hidden;
-	min-width: 30em;
+	min-width: 28em;
 }
-.kurs_naslovna {
-	background-color: white;
-	min-width: 25em;
-	margin: 1em 0em 0em 1em;
-	float: left;
-}
-
 #novosti {
 	clear: both;
 	background-color: white;
@@ -166,4 +159,44 @@ body {
 	color: #b81d18;
 	text-decoration: none;
 	padding-right: 4em;
+}
+
+/*kursevi.html*/
+#kursevi_naslovna {
+
+}
+.kurs {
+	background-color: white;
+	min-width: 26em;
+	margin: 1em 0em 0em 1em;
+	float: left;
+	font-family: 'Hind', sans-serif;
+}
+.slika_kursa{
+	width: 5em;
+	height: 5em;
+	float: left;
+}
+.organizator{
+	padding-bottom: 0.5em;
+}
+.naziv_organizator{
+	float: left;
+	margin: 0.5em;
+}
+.datum_trajanje{
+	float: right;
+	margin: 0.5em;
+}
+.naziv_kursa{
+	text-decoration: none;
+	color: #004687;
+}
+.datum_kursa{
+	padding-bottom: 0.5em;
+	color: #004687;
+	font-style: italic;
+}
+.trajanje_kursa{
+
 }
