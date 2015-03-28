@@ -5,7 +5,8 @@
 	padding: 0px;
 }
 th {
-	border-bottom: 1px solid #202020;
+	border-bottom: 0.1em solid #202020;
+	padding-bottom: 0.5em;
 }
 
 body {
@@ -94,6 +95,9 @@ body {
 	float: left;
 	width: 14em;
 	padding: 1em;
+}
+#pretraga #trazi{
+	text-align: right;
 }
 #kursevi_naslovna {
 	background-color: white;
