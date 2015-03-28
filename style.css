@@ -200,3 +200,36 @@ body {
 .trajanje_kursa{
 
 }
+
+/*detaljno*/
+#detaljno {
+	clear: both;
+	background-color: white;
+	padding: 1em 0 1em 0;
+	overflow: auto;
+}
+.naslov_detaljno{
+	margin: 1em 1em 0em 2em;
+	font-family: 'Hind', sans-serif;
+	font-size: 1.5em;
+	color: #004687;
+}
+.organizator_detaljno{
+	margin: 1em 1em 1em 2.5em;
+	font-family: 'Hind', sans-serif;
+	font-size: 1.2em;
+}
+.opis_detaljno{
+	margin: 1em 1em 1em 3em;
+	font-family: 'Hind', sans-serif;
+}
+.izdvojeno_detaljno{
+	float: right;
+	background-color: #202020;
+	padding: 1em;
+	margin:1em;
+	color: #b6b6b6;
+}
+.izdvojeno_detaljno p{
+	padding-bottom: 0.5em;
+}
