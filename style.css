@@ -95,20 +95,6 @@ body {
 	width: 14em;
 	padding: 1em;
 }
-#forma_pretraga {
-	font-family: 'Hind', sans-serif;
-}
-#forma_pretraga input{
-	width: 5em;
-	margin: 0.3em;
-}
-
-#forma_pretraga select{
-	width: 16em;
-	margin: 0.3em;
-	margin-left: 0;
-}
-
 #kursevi_naslovna {
 	background-color: white;
 	overflow: hidden;
@@ -133,6 +119,7 @@ body {
 #kraj {
 	background-color: #7E8F7C;
 	padding: 0.5em;
+	padding-left: 3em;
 }
 .naslov {
 	font-family: 'Hind', sans-serif;
@@ -232,4 +219,42 @@ body {
 }
 .izdvojeno_detaljno p{
 	padding-bottom: 0.5em;
+}
+
+form {
+font-family: 'Hind', sans-serif;
+}
+form input{
+	height: 1.4em;
+	margin: 0.3em;
+}
+form select{
+	height: 1.5em;
+	width: 16em;
+	margin: 0.3em;
+}
+form textarea{
+	width: 22em;
+	height: 15em;
+}
+.cijena_input{
+	width: 5.3em;
+}
+#submit{
+	padding: 0.1em 0.5em;	
+}
+.select_dodaj{
+	width: 13em;
+}
+#dodaj{
+	padding: 2em;
+
+	background-color: white;
+
+}
+#dodaj td{
+	text-align: right;
+}
+#dodaj #submit{
+	margin-left: 18em;
 }

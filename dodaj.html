@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KurseviInfo</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="okvir">
+		<div id="zaglavlje">
+			<div id="logo">
+				<a href="index.html">KurseviInfo</a>
+				<img src="images/logo.png" alt=""/>
+			</div>
+			<div id="meni">
+				<ul>
+					<a href="index.html"><li>Početna</li></a>
+					<a href="kursevi.html"><li>Kursevi</li></a>
+					<a href="dodaj.html"><li>Dodaj kurs</li></a>
+				</ul>
+			</div>
+		</div>
+		<div id="dodaj">
+			<form id="forma_dodaj">
+				<table id="tabela_dodaj">
+					<tr>
+						<td>Organizacija: </td><td><input type="text" name="organizacija"></td>
+					</tr>
+					<tr>
+						<td>Naziv kursa: </td><td><input type="text" name="naziv"></td>
+					</tr>
+					<tr><td>Kategorija:</td>
+						<td>
+							<select class="select_dodaj">
+							  <option value="jezici">Jezici</option>
+							  <option value="informatika">Informatika</option>
+							  <option value="ekonomija">Ekonomija</option>
+							  <option value="matematika">Matematika</option>
+							</select>
+					</td></tr>
+					<tr><td>Grad: </td><td>
+							<select class="select_dodaj">
+							  <option value="sarajevo">Sarajevo</option>
+							  <option value="bihac">Bihać</option>
+							  <option value="mostar">Mostar</option>
+							  <option value="jajce">Jajce</option>
+							</select>
+					</td></tr>
+					<tr><td>Cijena:</td><td><input type="text" name="cijena"></td></tr>
+					<tr><td>Datum pocetka:</td><td><input type="text" name="pocetak"></td></tr>
+					
+
+				</table>
+				<br>
+				Dodatne informacije:<br>
+				<textarea name="dodatno"></textarea><br>
+				<input id="submit" type="submit" value="Dodaj">
+			</form>
+		</div>
+		<div id="kraj">
+			<p>Razvio: Babić Mirhat - Predmet Web tehnologije - 2015</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -6,19 +6,17 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<a name="this"></a>
 	<div id="okvir">
 		<div id="zaglavlje">
 			<div id="logo">
-				<a href="#this">KurseviInfo</a>
+				<a href="index.html">KurseviInfo</a>
 				<img src="images/logo.png" alt=""/>
 			</div>
 			<div id="meni">
 				<ul>
 					<a href="index.html"><li>Početna</li></a>
 					<a href="kursevi.html"><li>Kursevi</li></a>
-					<a href=""><li>Dodaj kurs</li></a>
-					<a href=""><li>Kontakt</li></a>
+					<a href="dodaj.html"><li>Dodaj kurs</li></a>
 				</ul>
 			</div>
 		</div>
@@ -44,8 +42,8 @@
 							  <option value="jajce">Jajce</option>
 							</select></td></tr>
 						<tr><td>Cijena:</td></tr>
-						<tr><td>Od:<input type="text" name="najmanjaCijena"> Do:<input type="text" name="najvecaCijena"></td></tr>
-						<tr><td align="right"><input type="submit" value="Traži"></td></tr>
+						<tr><td>Od:<input class="cijena_input" type="text" name="najmanjaCijena"> Do:<input class="cijena_input" type="text" name="najvecaCijena"></td></tr>
+						<tr><td align="right"><input id="submit" type="submit" value="Traži"></td></tr>
 					</table>
 				</form>
 			</div>
@@ -60,7 +58,7 @@
 				</div>
 				<div class="kurs">
 					<p><img src="images/biblioteka.jpg" class="slika_kursa">
-					<div class="naziv_organizator"><p class="organizator">Centar civilnih inicijativa</p><a href=""  class="naziv_kursa">Naziv</a>
+					<div class="naziv_organizator"><p class="organizator">Centar civilnih inicijativa</p><a href="detaljno.html"  class="naziv_kursa">Naziv</a>
 					</div>
 					<div class="datum_trajanje">
 					<p class="datum_kursa">27.3.2015</p><p class="trajanje">4 sedmice</p></p>
@@ -68,7 +66,7 @@
 				</div>
 				<div class="kurs">
 					<p><img src="images/biblioteka.jpg" class="slika_kursa">
-					<div class="naziv_organizator"><p class="organizator">Centar civilnih inicijativa</p><a href="" class="naziv_kursa">Naziv</a>
+					<div class="naziv_organizator"><p class="organizator">Centar civilnih inicijativa</p><a href="detaljno.html" class="naziv_kursa">Naziv</a>
 					</div>
 					<div class="datum_trajanje">
 					<p class="datum_kursa">27.3.2015</p><p class="trajanje">4 sedmice</p></p>
@@ -77,7 +75,7 @@
 			</div>
 		</div>
 		<div id="kraj">
-			<p>Kraj</p>
+			<p>Razvio: Babić Mirhat - Predmet Web tehnologije - 2015</p>
 		</div>
 	</div>
 </body>
