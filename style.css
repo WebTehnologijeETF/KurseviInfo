@@ -105,11 +105,31 @@ body {
 	min-width: 28em;
 }
 #novosti {
-	clear: both;
 	background-color: white;
 	padding: 1em;
 	font-family: 'Hind', sans-serif;
-	overflow: auto;
+	overflow: hidden;
+}
+
+#arhiva_stablo {
+	float: right;
+	width: 200px;
+	background-color: white;
+}
+
+.arhiva_lista {
+	margin-left: 2em;
+}
+
+.arhiva_mjesec {
+	margin-left: 1.5em;
+	display: none;
+}
+
+
+.arhiva_sedmica {
+	margin-left: 1.5em;
+	display: none;
 }
 
 .novost img{
@@ -121,6 +141,8 @@ body {
 }
 
 #kraj {
+	overflow: auto;
+	clear: both;
 	background-color: #7E8F7C;
 	padding: 0.5em;
 	padding-left: 3em;
@@ -297,4 +319,12 @@ form textarea{
 	border-radius: 0.3em;
 	padding: 0.16em 0.5em;
 	color: red;
+}
+
+#arhiva_stablo p{
+	font-family: 'Hind', sans-serif;
+	color: #202020;
+	font-size: 1.2em;
+	padding-top: 0.5em;
+	clear: both;
 }
