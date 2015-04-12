@@ -232,33 +232,69 @@ form input{
 	height: 1.4em;
 	margin: 0.3em;
 }
+
+form input[type=date]{
+	width: 12.6em;
+}
+
+form input[type=number]{
+	width: 7em;
+}
+
 form select{
 	height: 1.5em;
 	width: 16em;
 	margin: 0.3em;
 }
+
 form textarea{
 	width: 22em;
 	height: 15em;
 }
 .cijena_input{
-	width: 5.3em;
+	width: 5em;
 }
 #submit{
 	padding: 0.1em 0.5em;	
 }
-.select_dodaj{
-	width: 13em;
-}
+
 #dodaj{
 	padding: 2em;
 
 	background-color: white;
 
 }
+
+#dodaj form select{
+	width: 13em;
+}
+
 #dodaj td{
 	text-align: right;
 }
 #dodaj #submit{
 	margin-left: 18em;
+}
+
+#podkategorija {
+	display: none;
+}
+
+#dodaj #tip_cijene{
+	width: 5.5em;
+}
+
+#dodaj #dodaj_cijena {
+	width: 6.3em;
+}
+
+.errorDodaj {
+	border: 1px solid red;
+	display: none;
+	text-align: left;
+	position: relative;
+	top: 0.4em;
+	border-radius: 0.3em;
+	padding: 0.16em 0.5em;
+	color: red;
 }

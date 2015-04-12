@@ -4,6 +4,7 @@
 	<title>KurseviInfo</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="validacija.js"></script>
 </head>
 <body>
 	<div id="okvir">
@@ -21,34 +22,68 @@
 			</div>
 		</div>
 		<div id="dodaj">
-			<form id="forma_dodaj">
+			<form id="forma_dodaj" name="dodajForma" onsubmit="return validirajFormu()" method="post">
 				<table id="tabela_dodaj">
 					<tr>
-						<td>Organizacija: </td><td><input type="text" name="organizacija"></td>
+						<td>Naziv kursa: </td>
+						<td><input type="text" name="naziv"></td>
+						<td class="errorDodaj" id="errorNaziv">Error</td>
 					</tr>
 					<tr>
-						<td>Naziv kursa: </td><td><input type="text" name="naziv"></td>
+						<td>Organizacija: </td>
+						<td><input type="text" name="organizacija"></td>
+						<td id="errorOrganizacija" class="errorDodaj">Error</td>
+					</tr>
+					<tr>
+						<td>Email: </td>
+						<td><input type="text" name="email"></td>
+						<td id="errorEmail" class="errorDodaj">Error</td>
 					</tr>
 					<tr><td>Kategorija:</td>
 						<td>
-							<select class="select_dodaj">
+							<select name="kategorija" id="kategorija">
 							  <option value="jezici">Jezici</option>
 							  <option value="informatika">Informatika</option>
 							  <option value="ekonomija">Ekonomija</option>
 							  <option value="matematika">Matematika</option>
 							</select>
-					</td></tr>
+					</td>
+					<td id="errorKategorija" class="errorDodaj">Error</td>
+					</tr>
+					<tr id="podkategorija">
+						<td>Podkategorija:</td>
+						<td>
+							<select name="podkategorija">
+							  <option value="engleski">Engleski</option>
+							  <option value="francuski">Francuski</option>
+							  <option value="njemacki">Njemacki</option>
+							  <option value="italijanski">Italijanski</option>
+							</select>
+						</td>
+						<td id="errorPodkategorija" class="errorDodaj">Error</td>
+					</tr>
 					<tr><td>Grad: </td><td>
-							<select class="select_dodaj">
+							<select name="grad">
 							  <option value="sarajevo">Sarajevo</option>
 							  <option value="bihac">Bihać</option>
 							  <option value="mostar">Mostar</option>
 							  <option value="jajce">Jajce</option>
 							</select>
-					</td></tr>
-					<tr><td>Cijena:</td><td><input type="text" name="cijena"></td></tr>
-					<tr><td>Datum pocetka:</td><td><input type="text" name="pocetak"></td></tr>
-					
+					</td>
+					<td id="errorGrad" class="errorDodaj">Error</td></tr>
+					<tr><td>Cijena:</td><td><input type="number" name="cijena" id="dodaj_cijena">
+					<select id="tip_cijene" name="tipcijene">
+							<option value="ukupno">Ukupno</option>
+							<option value="mjesecno">Mjesecno</option>
+							<option value="cas">Sat</option>
+						</select></td>
+						<td id="errorCijena" class="errorDodaj">Error</td></tr>
+					<tr><td>Datum početka:</td><td><input type="date" name="pocetak" id="pocetakDatePick"></td>
+						<td id="errorPocetak" class="errorDodaj">Error</td>
+					</tr>
+					<tr><td>Datum završetka:</td><td><input type="date" name="kraj" id="krajDatePick"></td>
+						<td id="errorKraj" class="errorDodaj">Error</td>
+					</tr>				
 
 				</table>
 				<br>
