@@ -17,13 +17,20 @@ function validirajFormu() {
         erori[i].innerHTML = "";
         erori[i].style.display = "none";
     };
-
+    var slike = document.getElementsByClassName("errorSlika");
+    for (var i = slike.length - 1; i >= 0; i--) {
+        slike[i].style.display = "none";
+    };
 
 
     if (naziv == null || naziv == "") {
         var error = document.getElementById("errorNaziv");
         error.style.display = "inline";
         error.innerHTML = "Morate unijeti naziv";
+
+        var slika = document.getElementById("slikaNaziv");
+        slika.style.display = "inline";
+
         ispravno = false;
     }
 
@@ -31,6 +38,10 @@ function validirajFormu() {
         var error = document.getElementById("errorEmail");
         error.style.display = "inline";
         error.innerHTML = "Email nije ispravan";
+
+        var slika = document.getElementById("slikaEmail");
+        slika.style.display = "inline";
+
         ispravno = false;
     }
 
@@ -38,6 +49,10 @@ function validirajFormu() {
         var error = document.getElementById("errorCijena");
         error.style.display = "inline";
         error.innerHTML = "Cijena ne može biti negativna";
+
+        var slika = document.getElementById("slikaCijena");
+        slika.style.display = "inline";
+
         ispravno = false;
     }
 
@@ -45,12 +60,20 @@ function validirajFormu() {
         var error = document.getElementById("errorPocetak");
         error.style.display = "inline";
         error.innerHTML = "Datum početka ne može biti prazan";
+
+        var slika = document.getElementById("slikaPocetak");
+        slika.style.display = "inline";
+
         ispravno = false;
     }
     else if (pocetak.getFullYear() < 2015 || pocetak.getFullYear() > 2016) {
         var error = document.getElementById("errorPocetak");
         error.style.display = "inline";
         error.innerHTML = "Godina može biti 2015. ili 2016.";
+
+        var slika = document.getElementById("slikaPocetak");
+        slika.style.display = "inline";
+
         ispravno = false;
     };
 
@@ -59,12 +82,20 @@ function validirajFormu() {
         var error = document.getElementById("errorKraj");
         error.style.display = "inline";
         error.innerHTML = "Datum kraja ne može biti prazan";
+
+        var slika = document.getElementById("slikaKraj");
+        slika.style.display = "inline";
+
         ispravno = false;
     }
     else if (kraj <= pocetak) {
         var error = document.getElementById("errorKraj");
         error.style.display = "inline";
         error.innerHTML = "Kraj mora biti poslije početka";
+
+        var slika = document.getElementById("slikaKraj");
+        slika.style.display = "inline";
+
         ispravno = false;
     };
 

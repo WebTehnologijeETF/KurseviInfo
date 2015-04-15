@@ -315,7 +315,7 @@ form textarea{
 	display: none;
 	text-align: left;
 	position: relative;
-	top: 0.4em;
+	top: -0.2em;
 	border-radius: 0.3em;
 	padding: 0.16em 0.5em;
 	color: red;
@@ -327,4 +327,16 @@ form textarea{
 	font-size: 1.2em;
 	padding-top: 0.5em;
 	clear: both;
+}
+
+.errorSlika {
+	display: none;
+	position: relative;
+	top: 0.2em;
+	left: -0.1em;
+}
+
+.errorSlika img{
+	width: 1.5em;
+	height: 1.5em;
 }
