@@ -14,9 +14,8 @@ body {
 }
 
 #okvir {
-	margin: 0em 3% 1.5% 3%;
 	min-width: 25em;
-	background-color: #b6b6b6;
+	background-color: white;
 	overflow: auto;
 }
 #zaglavlje {

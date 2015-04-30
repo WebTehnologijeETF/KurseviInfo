@@ -5,8 +5,10 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="validacija.js"></script>
+	<script src="gradValidacija.js"></script>
 </head>
 <body>
+	<a name="1"></a>
 	<div id="okvir">
 		<div id="zaglavlje">
 			<div id="logo">
@@ -15,9 +17,9 @@
 			</div>
 			<div id="meni">
 				<ul>
-					<li><a href="index.html">Početna</a></li>
-					<li><a href="kursevi.html">Kursevi</a></li>
-					<li><a href="dodaj.html">Dodaj kurs</a></li>
+					<li><a href="#1" id="aindex">Početna</a></li>
+					<li><a href="#1" id="akursevi">Kursevi</a></li>
+					<li><a href="#1" id="adodaj">Dodaj kurs</a></li>
 				</ul>
 			</div>
 		</div>
@@ -67,14 +69,19 @@
 						<td class="errorSlika" id="slikaPodkategorija"><img alt="" src="images/error.png"></td>
 						<td id="errorPodkategorija" class="errorDodaj">Error</td>
 					</tr>
-					<tr><td>Grad: </td><td>
-							<select name="grad">
-							  <option value="sarajevo">Sarajevo</option>
-							  <option value="bihac">Bihać</option>
-							  <option value="mostar">Mostar</option>
-							  <option value="jajce">Jajce</option>
-							</select>
-					</td>
+					<tr>
+						<td>Opstina: </td>
+						<td><input type="text" name="grad"></td>
+						<td class="errorSlika" id="slikaGrad"><img alt="" src="images/error.png"></td>
+						<td id="errorGrad" class="errorDodaj">Error</td>
+					</tr>
+					<tr>
+						<td>Mjesto: </td>
+						<td><input type="text" name="mjesto"></td>
+						<td class="errorSlika" id="slikaMjesto"><img alt="" src="images/error.png"></td>
+						<td id="errorMjesto" class="errorDodaj">Error</td>
+					</tr>
+					
 					<td class="errorSlika" id="slikaGrad"><img alt="" src="images/error.png"></td>
 					<td id="errorGrad" class="errorDodaj">Error</td></tr>
 					<tr><td>Cijena:</td><td><input type="number" name="cijena" id="dodaj_cijena">
@@ -105,5 +112,7 @@
 			<p>Razvio: Babić Mirhat - Predmet Web tehnologije - 2015</p>
 		</div>
 	</div>
+	<script type="text/javascript" src="ajax.js"></script>
+	<script type="text/javascript">pokreni();</script>
 </body>
 </html>
