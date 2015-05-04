@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>KurseviInfo - Kursevi</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<a name="1"></a>
-	<div id="okvir">
-		<div id="zaglavlje">
-			<div id="logo">
-				<a href="index.html">KurseviInfo</a>
-				<img src="images/logo.png" alt=""/>
-			</div>
-			<div id="meni">
-				<ul>
-					<li><a href="#1" id="aindex">Početna</a></li>
-					<li><a href="#1" id="akursevi">Kursevi</a></li>
-					<li><a href="#1" id="adodaj">Dodaj kurs</a></li>
-				</ul>
-			</div>
-		</div>
-		<div id="sadrzaj">
+		<div id="sadrzaj"> 
 			<div id="pretraga">
 				<form id="forma_pretraga">
 					<table>
@@ -48,41 +25,18 @@
 					</table>
 				</form>
 			</div>
-			<div id="kursevi_naslovna">
-				<div class="kurs">
-					<p><img src="images/biblioteka.jpg" class="slika_kursa" alt="">
-					<div class="naziv_organizator"><p class="organizator">Centar civilnih inicijativa</p>
-					<a href="#1" class="naziv_kursa">Poslovni Engleski prvi stepen</a>
-					</div>
-					<div class="datum_trajanje">
-					<p class="datum_kursa">27.3.2015</p><p class="trajanje">4 sedmice</p>
-					</div>
-				</div>
-				<div class="kurs">
-					<p><img src="images/biblioteka.jpg" class="slika_kursa" alt="">
-					<div class="naziv_organizator"><p class="organizator">Centar civilnih inicijativa</p>
-					<a href="#1"  class="naziv_kursa">Naziv</a>
-					</div>
-					<div class="datum_trajanje">
-					<p class="datum_kursa">27.3.2015</p><p class="trajanje">4 sedmice</p>
-					</div>
-				</div>
-				<div class="kurs">
-					<p><img src="images/biblioteka.jpg" class="slika_kursa" alt="">
-					<div class="naziv_organizator"><p class="organizator">Centar civilnih inicijativa</p>
-					<a href="#1" class="naziv_kursa">Naziv</a>
-					</div>
-					<div class="datum_trajanje">
-					<p class="datum_kursa">27.3.2015</p><p class="trajanje">4 sedmice</p>
-					</div>
-				</div>
+			<div id="dodaj_kursevi_naslovna">
+					<form id="kursevi_naslovna_forma">
+						Naziv: <input type="text" name="naziv"><br>
+						Organizacija:   <input type="text" name="organizacija"><br>
+						Slika:  <input type="text" name="slika"><br>
+						<input type="button" onclick="dodaj();" value="Dodaj">
+						<input type="button" onclick="modifikuj();" value="Modifikuj">
+						<input type="button" onclick="izbrisi();" value="Izbrisi">
+					</form>
 			</div>
-		</div>
-		<div id="kraj">
-			<p>Razvio: Babić Mirhat - Predmet Web tehnologije - 2015</p>
-		</div>
-	</div>
-	<script type="text/javascript" src="ajax.js"></script>
-	<script type="text/javascript">pokreni();</script>
-</body>
-</html>
+
+			<div id="kursevi_naslovna">
+				
+
+			</div>

@@ -1,4 +1,5 @@
 function stablo(){
+	console.log("pokrenuto stablo");
 	var godina = document.getElementsByClassName("godina");
 	var mjesec = document.getElementsByClassName("mjesec");
 

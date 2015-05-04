@@ -339,3 +339,8 @@ form textarea{
 	width: 1.5em;
 	height: 1.5em;
 }
+
+#dodaj_kursevi_naslovna {
+	border-top: 2em;
+	padding-top: 2em;
+}
