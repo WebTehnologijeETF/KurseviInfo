@@ -20,49 +20,7 @@ function dodaj(){
 	var kurs = napraviDiv(na, or, "1/1/1", "10", sl);
 	kursevi_naslovna.appendChild(kurs);
 
-}
-
-function modifikuj(){
-
-}
-
-function izbrisi(){
-	var na = document.forms["kursevi_naslovna_forma"]["naziv"].value;
-    var or = document.forms["kursevi_naslovna_forma"]["organizacija"].value;
-    var ajax = new XMLHttpRequest();
-	var kursevi_naslovna = document.getElementById('kursevi_naslovna');
-		ajax.onreadystatechange = function() {// Anonimna funkcija
-			if (ajax.readyState == 4 && ajax.status == 200)
-			{
-				var array = JSON.parse(ajax.responseText);
-				for(var n = 0; n < array.length; n++)
-				{
-    				var object = array[n];
-    				if (object["naziv"] == na && object["opis"] == or) {
-    					var id1 = object["id"];
-    					izbrisi(id1);
-    				};
-				}
-
-			} else if (ajax.status > 400) {
-				console.log(ajax.status);
-			};
-		}
-		ajax.open("POST", "http://zamger.etf.unsa.ba/wt/proizvodi.php?brindexa=16388", true);
-		ajax.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-		ajax.send();
-}
-
-function izbrisiId(id1)
-{
-	var ajax = new XMLHttpRequest();
-	var brisi{
-			id: id1;
-	}
-	ajax.open("POST", "http://zamger.etf.unsa.ba/wt/proizvodi.php?brindexa=16388", true);
-	ajax.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-	ajax.send("akcija=brisanje" + "&brindexa=16388&proizvod=" + JSON.stringify(brisi));
-}
+};
 
 function skiniProizvode(){
 	var ajax = new XMLHttpRequest();
@@ -84,7 +42,7 @@ function skiniProizvode(){
 		ajax.open("POST", "http://zamger.etf.unsa.ba/wt/proizvodi.php?brindexa=16388", true);
 		ajax.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 		ajax.send();
-}
+};
 
 function napraviDiv(naziv, organizator, datum, trajanje, slika){
 	var div = document.createElement('div');
@@ -127,4 +85,6 @@ function napraviDiv(naziv, organizator, datum, trajanje, slika){
 	div.appendChild(dt);
 
 	return div;
-}
+};
+
+
