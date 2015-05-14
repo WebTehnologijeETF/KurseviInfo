@@ -8,15 +8,18 @@ function skiniStranicu(link){
 		ajax.onreadystatechange = function() {// Anonimna funkcija
 			if (ajax.readyState == 4 && ajax.status == 200)
 			{
-				document.getElementById("tijelo").innerHTML = ajax.responseText;
-				dodajListenere();
-				if (link == "novosti.html") {
-					stablo();
-				} else if (link == "dodaj.html") {
+				if (link == "dodaj.php") {
+					document.getElementById("okvir").innerHTML = ajax.responseText;
 					document.getElementById("button").addEventListener( "click", function(ev){
 						validirajFormu();
 					}, false);
-					
+				}
+				else {
+					document.getElementById("tijelo").innerHTML = ajax.responseText;
+				}
+				dodajListenere();
+				if (link == "novosti.html") {
+					stablo();
 				} else if (link == "kursevi.html") {
 					skiniProizvode();
 				};
@@ -34,7 +37,7 @@ function dodajListenere(){
 	}, false);
 
 	document.getElementById("adodaj").addEventListener( "click", function(ev){
-		skiniStranicu("dodaj.html");
+		skiniStranicu("dodaj.php");
 	}, false);
 
 	document.getElementById("akursevi").addEventListener( "click", function(ev){

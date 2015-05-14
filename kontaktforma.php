@@ -1,0 +1,92 @@
+
+<?php
+if (isset($_POST['naziv'])) {
+	echo "POSTAVLJEN NAZIV";
+}
+
+ ?>
+
+
+<form action="kontaktforma.php" id="forma_dodaj" name="dodajForma" onsubmit="return validirajFormu()" method="post" >
+				<table id="tabela_dodaj">
+					<tr>
+						<td>Naziv kursa: </td>
+						<td><input type="text" name="naziv"></td>
+						<td class="errorSlika" id="slikaNaziv"><img alt="" src="images/error.png"></td>
+						<td class="errorDodaj" id="errorNaziv">Error</td>
+					</tr>
+					<tr>
+						<td>Organizacija: </td>
+						<td><input type="text" name="organizacija"></td>
+						<td class="errorSlika" id="slikaOrganizacija"><img alt="" src="images/error.png"></td>
+						<td id="errorOrganizacija" class="errorDodaj">Error</td>
+					</tr>
+					<tr>
+						<td>Email: </td>
+						<td><input type="text" name="email"></td>
+						<td class="errorSlika" id="slikaEmail"><img alt="" src="images/error.png"></td>
+						<td id="errorEmail" class="errorDodaj">Error</td>
+					</tr>
+					<tr><td>Kategorija:</td>
+						<td>
+							<select name="kategorija" id="kategorija">
+							  <option value="jezici">Jezici</option>
+							  <option value="informatika">Informatika</option>
+							  <option value="ekonomija">Ekonomija</option>
+							  <option value="matematika">Matematika</option>
+							</select>
+					</td>
+					<td class="errorSlika" id="slikaKategorija"><img alt="" src="images/error.png"></td>
+					<td id="errorKategorija" class="errorDodaj">Error</td>
+					</tr>
+					<tr id="podkategorija">
+						<td>Podkategorija:</td>
+						<td>
+							<select name="podkategorija">
+							  <option value="engleski">Engleski</option>
+							  <option value="francuski">Francuski</option>
+							  <option value="njemacki">Njemacki</option>
+							  <option value="italijanski">Italijanski</option>
+							</select>
+						</td>
+						<td class="errorSlika" id="slikaPodkategorija"><img alt="" src="images/error.png"></td>
+						<td id="errorPodkategorija" class="errorDodaj">Error</td>
+					</tr>
+					<tr>
+						<td>Opstina: </td>
+						<td><input type="text" name="grad"></td>
+						<td class="errorSlika" id="slikaGrad"><img alt="" src="images/error.png"></td>
+						<td id="errorGrad" class="errorDodaj">Error</td>
+					</tr>
+					<tr>
+						<td>Mjesto: </td>
+						<td><input type="text" name="mjesto"></td>
+						<td class="errorSlika" id="slikaMjesto"><img alt="" src="images/error.png"></td>
+						<td id="errorMjesto" class="errorDodaj">Error</td>
+					</tr>
+					
+					<td class="errorSlika" id="slikaGrad"><img alt="" src="images/error.png"></td>
+					<td id="errorGrad" class="errorDodaj">Error</td></tr>
+					<tr><td>Cijena:</td><td><input type="number" name="cijena" id="dodaj_cijena">
+					<select id="tip_cijene" name="tipcijene">
+							<option value="ukupno">Ukupno</option>
+							<option value="mjesecno">Mjesecno</option>
+							<option value="cas">Sat</option>
+						</select></td>
+						<td class="errorSlika" id="slikaCijena"><img alt="" src="images/error.png"></td>
+						<td id="errorCijena" class="errorDodaj">Error</td></tr>
+					<tr><td>Datum početka:</td><td><input type="date" name="pocetak" id="pocetakDatePick"></td>
+						<td class="errorSlika" id="slikaPocetak"><img alt="" src="images/error.png"></td>
+						<td id="errorPocetak" class="errorDodaj">Error</td>
+					</tr>
+					<tr><td>Datum završetka:</td><td><input type="date" name="kraj" id="krajDatePick"></td>
+						<td class="errorSlika" id="slikaKraj"><img alt="" src="images/error.png"></td>
+						<td id="errorKraj" class="errorDodaj">Error</td>
+					</tr>				
+
+				</table>
+				<br>
+				Dodatne informacije:<br>
+				<textarea name="dodatno"></textarea><br>
+				<input id="button" type="submit" value="Dodaj">
+			</form>
