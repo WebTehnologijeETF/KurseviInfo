@@ -295,18 +295,13 @@
 		</div>
 		
 		<div id="novosti">
-			<div class="novost"><h1 class="naslov">Naslov</h1><img src="images/biblioteka.jpg" alt=""><p class="autor">Autor</p><p class="datum">27.3.2015</p><br><br><p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel ornare metus, facilisis ultrices mauris. Nunc efficitur dolor vitae enim egestas aliquet. Pellentesque vel iaculis lacus. Etiam sodales fermentum mi id iaculis. Phasellus pharetra eu nisi sed posuere. Etiam ipsum lectus, volutpat sit amet nisl vel, accumsan vestibulum est. Suspendisse nec nisi nulla. Nulla diam ligula, cursus vel lorem vel, laoreet ultrices quam. Integer non molestie quam. Maecenas nunc mi, euismod et tristique sodales, facilisis vitae purus. Nullam sit amet varius ipsum, ut gravida purus. Nam gravida non tellus non pellentesque. Aliquam tincidunt ante id ex condimentum gravida. Nulla facilisi. Proin congue sem nec varius euismod. Nunc eget sem sit amet quam sollicitudin maximus.</p>
-				<a href="#1" class="detaljnije">Detaljnije</a></div>
-			
-
-		<?php
-
-
-
-		?>
-
-
-
+			<?php
+				include "skiniNovosti.php";
+			?>
 		</div>
+
+		
+
+
 		<script type="text/javascript" src="stablo.js"></script>
 		<script type="text/javascript">stablo();</script>

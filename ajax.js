@@ -1,5 +1,5 @@
 function pokreni(){
-	skiniStranicu("novosti.html");
+	skiniStranicu("novosti.php");
 	dodajListenere();
 };
 
@@ -18,7 +18,7 @@ function skiniStranicu(link){
 					document.getElementById("tijelo").innerHTML = ajax.responseText;
 				}
 				dodajListenere();
-				if (link == "novosti.html") {
+				if (link == "novosti.php") {
 					stablo();
 				} else if (link == "kursevi.html") {
 					skiniProizvode();
@@ -33,7 +33,7 @@ function skiniStranicu(link){
 
 function dodajListenere(){
 	document.getElementById("aindex").addEventListener( "click", function(ev){
-		skiniStranicu("novosti.html");
+		skiniStranicu("novosti.php");
 	}, false);
 
 	document.getElementById("adodaj").addEventListener( "click", function(ev){

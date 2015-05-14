@@ -167,10 +167,7 @@
 				</table>
 				<br>
 				Dodatne informacije:<br>
-				<textarea name="dodatno">
-					<?php if (isset($_POST['dodatno'])) {
-					echo $_POST['dodatno'];
-				}?>
+				<textarea name="dodatno"><?php if (isset($_POST['dodatno'])) {echo $_POST['dodatno'];}?>
 				</textarea><br>
 				<input id="button" type="submit" value="Dodaj">
 			</form>

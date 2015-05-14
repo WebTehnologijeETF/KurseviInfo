@@ -22,6 +22,6 @@ Datum završetka: <?php echo $_POST['kraj']; ?><br>
 </div>
 <form action="mail.php" style="padding:1.2em; font-size:1.1em;">
 	Da li ste sigurni da želite poslati ove podatke?
-	<input type="submit" value="Siguran sam">
+	<input type="submit" value="Siguran sam"><br><br>
 	Ako ste pogrešno popunili formu, možete ispod prepraviti unesene podatke
 </form>
